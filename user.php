@@ -31,9 +31,13 @@ class User
 		$sql = "INSERT INTO pessoa (nome,email,password) VALUES ('$this->nome', '$this->email','$this->senha')";
 		if ($conn->query($sql) == true) {
 			echo "registro feito";
+			$this->id = $conn->insert_id;
 		} else {
 			echo "erro" . $sql . "<br>" . $conn->error;
 		}
 	}
-	public function SetId($conn) {}
+	public function get_id()
+	{
+		return $this->id;
+	}
 };
