@@ -1,0 +1,123 @@
+body {
+    background-image: url('img/background.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.arrow{
+    width: 4%;
+    height: 45px;
+    margin: 0 auto;
+    margin-bottom: -20px;
+}.arrow:hover{
+    cursor: pointer;
+}
+main {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-left: 500px;
+    width: 30%;
+    position: relative;
+    perspective: 1000px;
+}
+
+#front {
+    background-color: black;
+    width: 80%;
+    height: 420px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    backdrop-filter: blur(15px);
+    background: black;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(15px);
+    transform: rotateY(0deg);
+    border-radius: 18px;
+}
+
+#back {
+    background-color: black;
+    width: 80%;
+    height: 420px;
+    color: black;
+    margin: 0 auto;
+    backdrop-filter: blur(15px);
+    background: white;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(15px);
+    transform: rotatey(-180deg);
+    border-radius: 18px;
+}
+
+#front, #back {
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 700ms;
+}a{
+    text-decoration: none;
+}#front a{
+    color: white;
+    margin-top: 40px;
+    font-size: 13px;
+
+}#front input{
+    background-color: #0000;
+    border: none;
+    border-bottom: white 1px solid;
+    margin-top: 25px;
+    margin-bottom: 2px;
+    padding: 5px;
+    color: whitesmoke;
+    width: 70%;
+}#front button{
+    background-color: #0000;
+    border:white 2px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 75%;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+
+}#front button:hover{
+    opacity: 0.2;
+}
+#back button:hover{
+    opacity: 0.2;
+}   
+#back a{
+    color: black;
+    margin-top: 40px;
+    font-size: 15px;
+
+}#back input{
+    background-color: #0000;
+    border: none;
+    border-bottom: black 1px solid;
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 2px;
+    color: black;
+    width: 70%;
+}#back button{
+    background-color: #0000;
+    border:black 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 75%;
+    height: 30px;
+    color: black;
+
+}#back button:hover{
+    opacity: 0.2;
+    cursor: pointer;
+} h1{
+    margin-top: 30px;
+}
