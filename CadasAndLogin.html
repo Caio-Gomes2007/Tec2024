@@ -16,35 +16,35 @@
         <div id="front">
             <h1>Faça o login</h1>
             <form action="connect.php" method="post">
-                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Nome" id="NomeLogin">
                 <br>
-                <input type="text" placeholder="Senha" name="senha">
+                <input type="password" placeholder="Senha" name="SenhaLogin">
                 <br>
                 <br>
-                <button type="submit">login</button>
+                <button type="">login</button>
             </form>
-            <br>
-            <a href="#">Esqueceu sua senha?</a>
-            <br>
+            
             <br>
             <a href="#naotem">Ainda não tem conta?</a>
         </div>
         <div id="back">
             <h1>Registre-se</h1>
-            <form action="cadastrar.php" method="post">
-                <input type="text"  placeholder="Nome" name="nome">
+            <form action="" method="">
+                <input type="text"  placeholder="Nome" id="NomeCadastro">
                 <br>
-                <input type="text" placeholder="Email" name="email">
+                <input type="email" placeholder="Email" id="EmailCadastro">
                 <br>
-                <input type="text" placeholder="Senha" name="password">
+                <input type="password" placeholder="Senha" id="SenhaCadastro">
                 <br>
                 <br>
-                <button type="submit">Cadastrar</button>
+                <button onclick="Cadastro('NomeCadastro','EmailCadastro')">Cadastrar</button>
             </form>
             <br>
             <a href="#temcont">Já possui conta?</a>
         </div>
     </main>
     <script src="script.js" defer></script>
+    <!--script do cookie-->
+    <script src="cookisJs.js" defer></script>
 </body>
 </html>
