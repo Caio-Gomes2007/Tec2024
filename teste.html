@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Valor</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="valor">Insira um valor:</label>
+        <input type="text" id="valor" name="valor">
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem"></p>
+    <img id="imagem" src="" alt="" style="display: none;">
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio do formulário
+
+            var valor = document.getElementById('valor').value;
+            var mensagem = document.getElementById('mensagem');
+            var imagem = document.getElementById('imagem');
+
+            if (valor) {
+                mensagem.textContent = "Valor recebido: " + valor;
+                imagem.src = "png-clipart-gree-correct-sign-correct-green.png"; // Imagem para valor recebido
+                imagem.style.display = "block";
+            } else {
+                mensagem.textContent = "Nenhum valor foi recebido.";
+                imagem.src = "pngtree-wrong-number-image_2248568.png"; // Imagem para valor não recebido
+                imagem.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
