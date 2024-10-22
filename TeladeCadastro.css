@@ -13,13 +13,13 @@ body {
 }
 /* Botão "Cadastre-se" no Nav */
 .navbar .btn-outline-success {
-    color: #3e6606;
-    border-color: #3e6606;
+    color: white;
+    border-color: white;
 }
 
 .navbar .btn-outline-success:hover {
     background-color: #3e6606;
-    color: white;
+    color: #3e6606;
     border-color: #3e6606;
 }
 #logo{
