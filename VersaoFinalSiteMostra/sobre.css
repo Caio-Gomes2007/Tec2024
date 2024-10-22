@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* Navbar */
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff8c00;
+}
+/* Botão "Cadastre-se" no Nav */
+.navbar .btn-outline-success {
+    color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #ff8c00;
+    color: white;
+    border-color: #ff8c00;
+}
+
+.hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    color: #3e6606;
+    font-size: 3em;
+}
+
+hr {
+    color: #3e6606;
+    border: none;
+    border-top: 2px solid #3e6606;
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.sobre p, .missao p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+h2 {
+    color: #3e6606;
+    font-size: 2em;
+}
+
+.valor-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.valor-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.valor-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

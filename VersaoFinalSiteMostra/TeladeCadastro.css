@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* Navbar */
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff8c00;
+}
+/* Botão "Cadastre-se" no Nav */
+.navbar .btn-outline-success {
+    color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #ff8c00;
+    color: white;
+    border-color: #ff8c00;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    perspective: 1000px; /* Para o efeito de rotação */
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 300px;
+}
+
+#front {
+    transform: rotateY(0deg);
+}
+
+#back {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    color: #3e6606;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3e6606;
+}
+
+button {
+    background-color: #3e6606;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: #3e6606;
+}
+
+a {
+    color: #3e6606;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
