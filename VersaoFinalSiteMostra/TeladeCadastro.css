@@ -9,18 +9,18 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff8c00;
+    color: #3e6606;
 }
 /* Botão "Cadastre-se" no Nav */
 .navbar .btn-outline-success {
-    color: #ff8c00;
-    border-color: #ff8c00;
+    color: #3e6606;
+    border-color: #3e6606;
 }
 
 .navbar .btn-outline-success:hover {
-    background-color: #ff8c00;
+    background-color: #3e6606;
     color: white;
-    border-color: #ff8c00;
+    border-color: #3e6606;
 }
 .main-container {
     display: flex;
