@@ -52,8 +52,9 @@ async function Cadastro(NomeId, EmailId, SenhaId) {
     setCookie("Nome", NomeCadastro, 7);
     setCookie("Email", EmailCadastro, 7);
     setCookie("Senha", senhaCriptografada, 7);
-    
+    await new Promise(resolve => setTimeout(resolve, 1000));
     alert("Cadastro realizado com sucesso!");
+    window.location.href = "index.html"
 }
 
 // Função de login
@@ -73,5 +74,8 @@ function Login(NomeId, SenhaId) {
             alert("Nome ou senha incorretos!");
         }
     });
+    alert("Login realizado com sucesso!");
+    window.location.href = "index.html"
+}
 }
 
