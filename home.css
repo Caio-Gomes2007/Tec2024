@@ -18,6 +18,12 @@ body {
     color: white;
     transition: color 0.3s;
 }
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    border-bottom:solid white 2px;
+
+}
 /* Botão "Cadastre-se" no Nav */
 .navbar .btn-outline-success {
     color: white;
@@ -25,7 +31,7 @@ body {
 }
 
 .navbar .btn-outline-success:hover {
-    background-color: white;
+    background-color: #3e6606;
     color: #3e6606;
     border-color: #3e6606;
 }

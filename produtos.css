@@ -18,8 +18,11 @@ body {
     transition: color 0.3s;
 }
 
+
 .navbar-nav .nav-link:hover {
     color: white;
+    border-bottom:solid white 2px;
+
 }
 /* Botão "Cadastre-se" no Nav */
 .navbar .btn-outline-success {
