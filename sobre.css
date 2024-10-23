@@ -1,5 +1,15 @@
+
+@font-face {
+  font-family: 'Roboto'; /* Escolha um nome para a fonte */
+  src: url('./fontes/Roboto-Medium.ttf'); /* Outros formatos conforme necessário */
+  font-weight: normal; /* Pode ser 'normal', 'bold', etc. */
+  font-style: normal; /* Pode ser 'normal', 'italic', etc. */
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #f4f4f4;
 }
 /* Navbar */
@@ -21,6 +31,10 @@ body {
     background-color: #3e6606;
     color: #3e6606;
     border-color: #3e6606;
+}
+.container-fluid{
+    background-color:#3e6606;
+
 }
 
 .hero {

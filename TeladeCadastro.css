@@ -1,5 +1,15 @@
+
+
+@font-face {
+  font-family: 'Roboto'; /* Escolha um nome para a fonte */
+  src: url('./fontes/Roboto-Medium.ttf'); /* Outros formatos conforme necessário */
+  font-weight: normal; /* Pode ser 'normal', 'bold', etc. */
+  font-style: normal; /* Pode ser 'normal', 'italic', etc. */
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #f4f4f4;
 }
 /* Navbar */
@@ -9,7 +19,9 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #3e6606;
+    color: white;
+    border-bottom:solid white 2px;
+
 }
 /* Botão "Cadastre-se" no Nav */
 .navbar .btn-outline-success {
@@ -27,11 +39,16 @@ body {
     height:70px;
 }
 .main-container {
+    background-image:url('./img/pexels-photo-14478269.jfif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     display: flex;
+    text-align:center;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    margin-top:0px; /* Espaço para o cabeçalho fixo */
     perspective: 1000px; /* Para o efeito de rotação */
 }
 
@@ -45,7 +62,7 @@ body {
     backface-visibility: hidden;
     position: absolute;
     width: 300px;
-    margin-bottom:200px;
+    margin-bottom:10px;
 }
 
 #front {
@@ -74,8 +91,9 @@ input {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 7px;
+    
     outline: none;
+    background-color:#ccc;
 }
 
 input:focus {

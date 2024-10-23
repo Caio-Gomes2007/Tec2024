@@ -20,7 +20,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbajrNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
@@ -33,12 +33,9 @@
         <div class="container" id="front">
             <h2>Cadastro</h2>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nomeCadas" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="emailCadas" name="email" required>
-                <label for="password">Senha:</label>
-                <input type="password" id="passwordCadas" name="password" required>
+                <input type="text" id="nomeCadas" name="nome" required placeholder="Nome">
+                <input type="email" id="emailCadas" name="email" required placeholder="Email">
+                <input type="password" id="passwordCadas" name="password" required placeholder="Senha">
                 <button onclick="Cadastro('nomeCadas','emailCadas','passwordCadas')">Cadastrar</button>
             </form>
             <a href="#temcont">Já tem uma conta? Faça login</a>
@@ -47,10 +44,8 @@
         <div class="container" id="back">
             <h2>Login</h2>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nomeLogin" name="nome" required>
-                <label for="password">Senha:</label>
-                <input type="password" id="passwordLogin" name="password" required>
+                <input type="text" id="nomeLogin" name="nome" required placeholder="Nome">
+                <input type="password" id="passwordLogin" name="password" required placeholder="Senha">
                 <button onclick="Login('nomeLogin','passwordLogin')">Login</button>
             </form>
             <a href="#naotem">Não tem uma conta? Cadastre-se</a>

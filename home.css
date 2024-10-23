@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Roboto'; /* Escolha um nome para a fonte */
+  src: url('./fontes/Roboto-Medium.ttf'); /* Outros formatos conforme necessário */
+  font-weight: normal; /* Pode ser 'normal', 'bold', etc. */
+  font-style: normal; /* Pode ser 'normal', 'italic', etc. */
+}
+
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #f4f4f4;
+    
 }
 /* Navbar */
 .navbar-nav .nav-link {
@@ -14,7 +25,7 @@ body {
 }
 
 .navbar .btn-outline-success:hover {
-    background-color: #3e6606;
+    background-color: white;
     color: #3e6606;
     border-color: #3e6606;
 }
@@ -26,7 +37,12 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #3e6606;
+    color: #000;
+}
+.container-fluid{
+    background-color:#3e6606;
+    
+
 }
 
 /* Estilização do card */
